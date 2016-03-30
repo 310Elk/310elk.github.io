@@ -1,0 +1,169 @@
+
+html, body {
+  height: 100%;
+  color: #333;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; 
+}
+body {
+}
+
+section{
+  padding: 20px 20px 60px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #888888;
+}
+section.last{
+  border-bottom: 0;
+}
+
+h1 {
+  color: #84a2b6;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.25em;
+  margin-bottom: 1em;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+section h2,
+p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin: 0 auto 1.5em;
+}
+section h2 {
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+
+footer {
+  text-align: left;
+  background: #888;
+  color: #fff;
+  padding: 30px 0 20px;
+  letter-spacing: 1px;
+  font-size: 80%;
+}
+
+footer a ,
+footer a:hover {
+  color: #fff;
+}
+footer .fa-inverse {
+  color: #888;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0;
+}
+footer li {
+  display: inline;
+  padding: 0;
+  margin: 0 1em;
+}
+footer .copyright-credits {
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+.hero {
+  color: #fff;
+  background: #333 url(../img/bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+  border: 0;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.hero .logo {
+  position: absolute;
+  left: 84px;
+  top: 105px;
+}
+
+.hero h1 {
+  text-align: left;
+  font-size: 100px;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  margin 0;
+  font-weight: lighter;
+  font-size: 59px;
+}
+.hero h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  color: #000;
+  position: absolute;
+  right: 84px;
+  bottom: 105px;
+  width: 440px;
+  line-height: 1.5;
+}
+.hero h2 {
+  text-align: right;
+}
+
+#who-we-are h2 {
+}
+
+#who-we-are h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+.bio-container {
+  margin-top: 50px;
+}
+#who-we-are .bio h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+#who-we-are .bio h3 {
+  text-align: center;
+}
+#who-we-are .bio img {
+  margin: 0 auto;
+}
+#who-we-are .bio p {
+}
+
+.bio i.fa {
+  color: #444;
+  font-size: 2em;
+}
+
+#what-weve-done .work {
+}
+#what-weve-done img {
+  margin: 0 auto;
+}
+
+#contact-us {
+  min-height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
