@@ -68,7 +68,7 @@ footer .copyright-credits {
 
 .hero {
   color: #fff;
-  background: #333 url(../img/bg-cropped.jpg) no-repeat;
+  background: #000;
   background-position: top center;
   background-size: cover;
   border: 0;
@@ -78,6 +78,7 @@ footer .copyright-credits {
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 .hero .logo {
   display: block;
@@ -87,6 +88,7 @@ footer .copyright-credits {
 }
 
 .hero h1 {
+  position: relative;
   text-align: center;
   text-transform: none;
   padding: 0 1em;
@@ -97,7 +99,21 @@ footer .copyright-credits {
   color: #fff;
 }
 .hero p {
+  position: relative;
   padding: 0 1em;
+}
+
+video#bgvid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 #hero-quote {
@@ -201,29 +217,18 @@ footer .copyright-credits {
     left: 84px;
     top: 105px;
     margin-left: 0;
-}
+  }
 
-.hero h1 {
-  text-align: center;
-  text-transform: none;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  font-weight: lighter;
-  font-size: 44px;
-  color: #fff;
-}
-.hero h2 {
-  font-size: 25px;
-  font-weight: lighter;
-  color: #000;
-  position: absolute;
-  right: 84px;
-  bottom: 105px;
-  width: 440px;
-  line-height: 1.5;
-  text-align: right;
-}
+  .hero h1 {
+    text-align: center;
+    text-transform: none;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 44px;
+    color: #fff;
+  }
 
 /* ffc600 */
 
