@@ -74,7 +74,7 @@ footer .copyright-credits {
 
 .hero {
   color: #fff;
-  background: #333 url(../img/bg.jpg) no-repeat;
+  background: #333 url(../img/bg-cropped.jpg) no-repeat;
   background-position: top center;
   background-size: cover;
   border: 0;
@@ -86,21 +86,101 @@ footer .copyright-credits {
 }
 .hero .logo {
   position: absolute;
-  left: 84px;
-  top: 105px;
+  left: 50%;
+  top: 20px;
+  margin-left: -76px;
 }
 
 .hero h1 {
-  text-align: left;
-  font-size: 100px;
-  text-transform: uppercase;
-  position: absolute;
+  text-align: center;
+  text-transform: none;
+  padding: 0 1em;
+  border: 0;
+  margin: 160px 0 1em;
+  font-weight: lighter;
+  font-size: 30px;
+  color: #fff;
+}
+.hero h2 {
+  font-size: 22px;
+  font-weight: lighter;
+  color: #fff;
   width: 100%;
+  padding: 0 1em;
+  line-height: 1.5;
+  text-align: center;
+}
+.hero p {
+  padding: 0 1em;
+}
+
+#who-we-are h2 {
+}
+
+#who-we-are h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+.bio-container {
+  margin-top: 50px;
+}
+#who-we-are .bio h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+#who-we-are .bio h3 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+#who-we-are .bio img {
+  margin: 0 auto;
+}
+#who-we-are .bio p {
+}
+
+.bio i.fa {
+  color: #444;
+  font-size: 2em;
+}
+
+#what-weve-done .work {
+}
+#what-weve-done img {
+  margin: 0 auto;
+}
+
+#contact-us-thanks {
+  display: none;
+}
+
+#contact-us-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.alt-contact {
+  margin-top: 2em;
+}
+#contact-message {
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .logo {
+    left: 84px;
+    top: 105px;
+    margin-left: 0;
+}
+
+.hero h1 {
+  text-align: center;
+  text-transform: none;
   padding: 0;
   border: 0;
-  margin 0;
+  margin: 0;
   font-weight: lighter;
-  font-size: 59px;
+  font-size: 44px;
+  color: #fff;
 }
 .hero h2 {
   font-size: 25px;
@@ -111,8 +191,6 @@ footer .copyright-credits {
   bottom: 105px;
   width: 440px;
   line-height: 1.5;
-}
-.hero h2 {
   text-align: right;
 }
 
@@ -168,6 +246,25 @@ footer .copyright-credits {
 }
 
 @media screen and (min-width: 768px) {
+  .hero .logo {
+    left: 84px;
+    top: 105px;
+  }
+  .hero h1 {
+    margin: 280px 0 0 0;
+    font-size: 59px;
+  }
+  .hero h2 {
+    font-size: 25px;
+    font-weight: lighter;
+    color: #000;
+    position: absolute;
+    right: 84px;
+    bottom: 105px;
+    width: 440px;
+    line-height: 1.5;
+    text-align: right;
+  }
   footer {
     text-align: center;
   }
@@ -178,4 +275,8 @@ footer .copyright-credits {
   .container {
     max-width: 970px;
   }
+  footer {
+    text-align: center;
+  }
+
 }
