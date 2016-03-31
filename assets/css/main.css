@@ -165,6 +165,31 @@ footer .copyright-credits {
   height: 200px;
 }
 
+#notable-achievements .achievement {
+  text-align: center;
+  margin-bottom: 1em;
+}
+#notable-achievements .achievement img {
+  display: block;
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto 0.5em;
+}
+
+#notable-achievements .achievement-date {
+  display: block;
+  font-size: 90%;
+}
+#notable-achievements .achievement-source {
+  display: block;
+  font-size: 90%;
+}
+#notable-achievements .achievement-name {
+  display: block;
+  font-size: 110%;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   .hero .logo {
     left: 84px;
