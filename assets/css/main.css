@@ -54,18 +54,11 @@ footer a ,
 footer a:hover {
   color: #fff;
 }
+.footer-item {
+  margin-bottom: 1em;
+}
 footer .fa-inverse {
   color: #888;
-}
-footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 1em 0;
-}
-footer li {
-  display: inline;
-  padding: 0;
-  margin: 0 1em;
 }
 footer .copyright-credits {
   text-transform: uppercase;
@@ -251,19 +244,20 @@ footer .copyright-credits {
     top: 105px;
   }
   .hero h1 {
-    margin: 280px 0 0 0;
+    margin: 280px 0 20px 0;
     font-size: 59px;
   }
   .hero h2 {
-    font-size: 25px;
-    font-weight: lighter;
+    font-size: 22px;
     color: #000;
     position: absolute;
     right: 84px;
     bottom: 105px;
-    width: 440px;
-    line-height: 1.5;
+    width: 450px;
     text-align: right;
+  }
+  .hero p {
+    max-width: 430px;
   }
   footer {
     text-align: center;
