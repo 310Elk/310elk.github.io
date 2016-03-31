@@ -31,7 +31,7 @@
 <body>
 
 
-  <section class="container-fluid hero" id="top"> 
+  <section class="container-fluid hero" id="top">
     <img class="logo" src="assets/img/logo.png" alt="Three Ten Elk" />
     <h2><em>“It’s not just a logo, a website and some business cards...it’s an experience.”</em><div>- 310Elk</div></h2>
   </section>
@@ -118,7 +118,55 @@
 
   <section class="container last" id="contact-us">
     <h1>Contact Us</h1>
-    <p><a href="mailto:hello@310elk.com">hello@310elk.com</a></p>
+    <div id="contact-us-thanks"><p>Thanks for submitting your message. We'll get back to you soon.</p></div>
+    <form id="contact-us-form" method="POST" action="https://formspree.io/jonathon@310elk.com">
+    <input type="hidden" name="_subject" value="Website Contact Us" />
+      <div class="form-group">
+        <label for="contact-name">Name</label>
+        <input class="form-control" type="name" id="contact-name" name="name" placeholder="Name" />
+      </div>
+      <div class="form-group">
+        <label for="contact-email">Email Address</label>
+        <input class="form-control" type="email" d="contact-email" name="_replyto" placeholder="Email Address" />
+      </div>
+      <div class="form-group">
+        <label for="contact-message">Message</label>
+        <textarea class="form-control" id="contact-message" name="message" placeholder="Message..."></textarea>
+      </div>
+       <button type="submit" class="btn btn-default btn-primary">Send</button>
+    </form>
+    <script>
+      $(function () {
+        var f = $('form#contact-us-form');
+        f.on('submit', function (e) {
+          e.preventDefault();
+
+          var b = f.find(':button');
+          b.prop('disabled', true);
+          b.text('Sending...');
+
+          $.ajax({
+            url: "https://formspree.io/hello@310elk.com",
+            method: "POST",
+            data: {
+              name: $('#contact-name').val(),
+              _replayto: $('#contact-email').val(),
+              _subject: 'Website Contact Us Form',
+              message: $('#contact-message').val()
+            },
+            dataType: "json"
+          })
+          .done(function (result) {
+            console.log(result);
+            b.prop('disabled', false);
+            b.text('Send');
+            f.remove();
+            $('#contact-us-thanks').css('display', 'block');
+          });;
+        });
+      });
+    </script>
+    <p class="alt-contact">Or you can email us at: <a href="mailto:hello@310elk.com">hello@310elk.com</a></p>
 
   </section>
 
