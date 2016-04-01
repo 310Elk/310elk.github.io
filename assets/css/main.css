@@ -70,8 +70,8 @@ footer .credits {
 
 .hero {
   color: #fff;
-  background: #000;
-  background-position: top center;
+  background: #000 url(../vid/campfire.jpg);
+  background-position: center center;
   background-size: cover;
   border: 0;
 
@@ -120,6 +120,7 @@ footer .credits {
 }
 
 video#bgvid {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -292,6 +293,9 @@ video#bgvid {
 }
 
 @media screen and (min-width: 768px) {
+  video#bgvid {
+    display: block;
+  }
   .hero .logo {
     position: absolute;
     left: 35px;
