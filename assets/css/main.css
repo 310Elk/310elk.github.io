@@ -219,11 +219,8 @@ video#bgvid {
   float: left;
 }
 
-#notable-achievements .achievement-date {
-}
-#notable-achievements .achievement-source {
-}
-#notable-achievements .achievement-name {
+#notable-achievements .achievement {
+  margin-bottom: 1em;
 }
 
 @media screen and (min-width: 768px) {
@@ -294,7 +291,7 @@ video#bgvid {
 
 @media screen and (min-width: 768px) {
   video#bgvid {
-    display: block;
+    display: none;
   }
   .hero .logo {
     position: absolute;
@@ -321,6 +318,9 @@ video#bgvid {
   #notable-achievements .achievement img {
     float: none;
   }
+#notable-achievements .achievement {
+  margin-bottom: 0;
+}
   footer {
     text-align: center;
   }
