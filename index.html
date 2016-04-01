@@ -192,7 +192,7 @@
       </div>
       <div class="form-group">
         <label for="contact-email">Email Address</label>
-        <input class="form-control" type="email" d="contact-email" name="_replyto" placeholder="Email Address" />
+        <input class="form-control" type="email" id="contact-email" name="_replyto" placeholder="Email Address" />
       </div>
       <div class="form-group">
         <label for="contact-message">Message</label>
@@ -216,6 +216,7 @@
             data: {
               name: $('#contact-name').val(),
               email: $('#contact-email').val(),
+              _replyto: $('#contact-email').val(),
               _subject: 'Website Contact Us Form',
               message: $('#contact-message').val()
             },
