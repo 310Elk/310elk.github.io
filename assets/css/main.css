@@ -198,6 +198,10 @@ video#bgvid {
   max-width: 600px;
   margin: 0 auto;
 }
+#contact-us-form .btn-primary {
+  padding: 8px 20px;
+  font-size: 115%;
+}
 .alt-contact {
   margin-top: 2em;
 }
