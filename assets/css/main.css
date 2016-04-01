@@ -104,6 +104,20 @@ footer .credits {
   position: relative;
   padding: 0 1em;
 }
+.hero .call-to-action {
+  text-align: center;
+}
+.hero a.btn {
+  position: relative;
+  padding: 0 1em;
+  background: #ffc600;
+  color: #333;
+  border: 0;
+  font-size: 16px;
+  padding: 16px 16px;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
 
 video#bgvid {
   position: absolute;
@@ -119,6 +133,7 @@ video#bgvid {
 }
 
 #hero-quote {
+  position: relative;
   background: #ffdc21;
   border: 0;
   padding: 30px 30px;
@@ -287,6 +302,9 @@ video#bgvid {
   }
   .hero p {
     max-width: 430px;
+  }
+  .hero a.btn {
+    padding: 16px 24px;
   }
   #hero-quote {
     padding-top: 50px;
