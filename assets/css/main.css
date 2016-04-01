@@ -188,29 +188,25 @@ video#bgvid {
   height: 200px;
 }
 
+#notable-achievements .achievements {
+  max-width: 600px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
 #notable-achievements .achievement {
-  text-align: center;
-  margin-bottom: 1em;
+  text-align: left;
 }
 #notable-achievements .achievement img {
-  display: block;
-  max-width: 85px;
-  width: 100%;
-  margin: 0 auto 0.5em;
+  display: inline-block;
+  margin-right: 1em;
+  float: left;
 }
 
 #notable-achievements .achievement-date {
-  display: block;
-  font-size: 90%;
 }
 #notable-achievements .achievement-source {
-  display: block;
-  font-size: 90%;
 }
 #notable-achievements .achievement-name {
-  display: block;
-  font-size: 110%;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -298,6 +294,9 @@ video#bgvid {
   }
   #hero-quote h2 {
     font-size: 24px;
+  }
+  #notable-achievements .achievement img {
+    float: none;
   }
   footer {
     text-align: center;
