@@ -70,7 +70,6 @@ footer .credits {
 
 .hero {
   color: #fff;
-  background: #000 url(../vid/campfire.jpg);
   background-position: center center;
   background-size: cover;
   border: 0;
@@ -81,6 +80,7 @@ footer .credits {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  position: relative;
 }
 .hero .logo {
   display: block;
@@ -122,15 +122,13 @@ footer .credits {
 video#bgvid {
   display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
+  min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
 }
 
 #hero-quote {
@@ -144,7 +142,7 @@ video#bgvid {
   color: #333;
   font-size: 18px;
   text-align: center;
-  max-width: 745px;;
+  max-width: 745px;
   margin: 0 auto;
   font-weight: normal;
   line-height: 1.8;
@@ -294,6 +292,9 @@ video#bgvid {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    background: #000 url(../vid/campfire.jpg);
+  }
   video#bgvid {
     display: block;
   }
